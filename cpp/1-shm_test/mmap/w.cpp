@@ -20,20 +20,16 @@ void writeMemory()
 {
     // specify shared file path
     char *shared_file_name = "/tmp/shm";
-    // 写固定的长度
-    // define shared data
-    //    unsigned long buff_size = 4096;
-    //    char share_buffer[] = "greetings, hello world";
-    //    MyData share_buffer("Tom", 18);
+
     MyData share_buffer = {"Tom", 18, {1, 2, 3}};
 
     // create mmap file
     int fd = open(shared_file_name, O_CREAT | O_RDWR | O_TRUNC, 00777);
     if (fd < 0)
         cout << "create file error" << endl;
-
+    // write_size = 4096
     size_t write_size = sizeof(share_buffer);
-
+    cout << "write_size:" << write_size << endl;
     ftruncate(fd, write_size); // extend file size
 
     // map memory to file
