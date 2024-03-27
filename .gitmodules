@@ -1,3 +1,6 @@
 [submodule "ai_arm_learning"]
 	path = ai_arm_learning
 	url = https://github.com/Rex-LK/ai_arm_learning
+[submodule "tensorrt_learning"]
+	path = tensorrt_learning
+	url = https://github.com/Rex-LK/tensorrt_learning
