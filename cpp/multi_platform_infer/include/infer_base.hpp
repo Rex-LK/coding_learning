@@ -10,7 +10,7 @@ public:
         model_path_.clear();
     }
 
-    virtual std::string doinference (const std::string& image_path) = 0;
+    virtual std::string forward (const std::string& image_path) = 0;
     virtual void load_model() = 0;
 
 protected:

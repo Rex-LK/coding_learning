@@ -12,10 +12,9 @@ class OriginalInferA {
   }
   ~OriginalInferA() { model_path_.clear(); }
   
-  std::string DoinferecneA(const std::string& image_path) {
-    std::string result = "original_infer_a do inference:" + image_path;
-    std::cout << result << std::endl;
-    return result;
+  std::string forward_a(const std::string& image_path) {
+    std::cout << "original_infer_a forward_a:" + image_path << std::endl;
+    return "original_infer_a forward_a:" + image_path + "_result";
   }
 
  private:

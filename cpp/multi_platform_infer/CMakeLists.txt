@@ -3,7 +3,7 @@ project(infer_test)
 
 set(CMAKE_CXX_STANDARD 17)
 
-set(platform B)
+set(platform A)
 
 if(${platform} STREQUAL "A")
     add_compile_definitions(INFER_IN_A)
