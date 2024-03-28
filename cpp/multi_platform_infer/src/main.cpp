@@ -5,7 +5,6 @@
 using namespace std;
 
 
-
 int main(){
     shared_ptr<ContainerInferBase> infer = nullptr;
     string model_path = "test.model";

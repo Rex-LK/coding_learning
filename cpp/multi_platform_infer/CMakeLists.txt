@@ -21,4 +21,4 @@ set(SDK_DIR ${CMAKE_CURRENT_SOURCE_DIR}/third/${platform})
 include_directories(${SDK_DIR}/original_infer)
 include_directories(${SDK_DIR}/container_infer)
 
-add_executable(${PROJECT_NAME} src/test.cpp)
+add_executable(${PROJECT_NAME} src/main.cpp)

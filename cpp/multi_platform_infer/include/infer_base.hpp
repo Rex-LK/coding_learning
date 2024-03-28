@@ -6,7 +6,7 @@ public:
     InferBase(const std::string& model_path){
         model_path_ = model_path;
     }
-    ~InferBase(){
+    virtual ~InferBase(){
         model_path_.clear();
     }
 
